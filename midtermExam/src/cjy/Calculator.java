@@ -36,8 +36,9 @@ public class Calculator extends JFrame {
 		t1 = new JTextField("0");
 		t1.setFont(new Font("Arial", Font.PLAIN, 30)); // 결과 창 폰트 변경 @see chatGPT
 		t1.setHorizontalAlignment(JTextField.RIGHT);
-		t1.setPreferredSize(new Dimension(300, 100)); // 결과 창 크기 조정 @see chatGPT
+		t1.setPreferredSize(new Dimension(300, 120)); // 결과 창 크기 조정 @see chatGPT
 		t1.setEnabled(false);
+		t1.setDisabledTextColor(Color.BLACK);
 		add(t1, "North");
 
 		JPanel p1 = new JPanel();
@@ -136,6 +137,12 @@ public class Calculator extends JFrame {
 		for (String label : buttonLabels) {
 			JButton button = new JButton(label);
 			button.addActionListener(buttonListener);
+			if (label.equals("=")) {
+				button.setBackground(Color.BLUE);
+				button.setForeground(Color.WHITE); // 텍스트 색상도 변경
+			} else {
+				button.setBackground(Color.WHITE);
+			}
 			p1.add(button);
 		}
 
