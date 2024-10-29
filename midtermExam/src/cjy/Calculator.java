@@ -8,17 +8,20 @@ import javax.swing.*;
  * 간단한 윈도우 계산기입니다.
  * 
  * @author Choi Jong Yun
- * @version 1.1
+ * @version 1.7
  * @since 1.0
  * 
  * @created 2024-10-19
- * @lastModified 2024-10-22
+ * @lastModified 2024-10-29
  * 
  * @changelog
  *            <ul>
  *            <li>2024-10-19: 최초 생성</li>
  *            <li>2024-10-20: 계산기 외형 변경</li>
  *            <li>2024-10-22: 계산기 기능 추가</li>
+ *            <li>2024-10-24: 계산기 기능 추가</li>
+ *            <li>2024-10-25: 결과창 변경</li>
+ *            <li>2024-10-29: 최종확인</li>
  *            </ul>
  */
 
